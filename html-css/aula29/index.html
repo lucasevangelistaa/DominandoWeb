@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento estático e relativo</title>
+    <style>
+        body {
+            background-color: #007fc7;
+        }
+        #container {
+            background-color: #fff;
+            width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        h1 {
+            position: static;
+        }
+        p {
+            position: static;
+            width: 300px;
+        }
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            /* Top, right, bottom e left */
+            /* top: 10px;
+            left: 20px;
+            right: 40px; */
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p>P1 | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis magni, itaque doloremque modi sed earum rem consectetur, ratione placeat totam similique illo? Quos dicta provident eaque. Fuga cum temporibus quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi incidunt in quos voluptates suscipit fugiat ipsum impedit corrupti ad, libero provident possimus exercitationem facilis debitis quo eos tempora error perferendis?</p>
+
+        <p class="relative">P2 | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis magni, itaque doloremque modi sed earum rem consectetur, ratione placeat totam similique illo? Quos dicta provident eaque. Fuga cum temporibus quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi incidunt in quos voluptates suscipit fugiat ipsum impedit corrupti ad, libero provident possimus exercitationem facilis debitis quo eos tempora error perferendis?</p>
+
+        <p>P3 | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis magni, itaque doloremque modi sed earum rem consectetur, ratione placeat totam similique illo? Quos dicta provident eaque. Fuga cum temporibus quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi incidunt in quos voluptates suscipit fugiat ipsum impedit corrupti ad, libero provident possimus exercitationem facilis debitis quo eos tempora error perferendis?</p>
+
+        <p>P4 | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis magni, itaque doloremque modi sed earum rem consectetur, ratione placeat totam similique illo? Quos dicta provident eaque. Fuga cum temporibus quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi incidunt in quos voluptates suscipit fugiat ipsum impedit corrupti ad, libero provident possimus exercitationem facilis debitis quo eos tempora error perferendis?</p>
+    </div>
+</body>
+</html>
