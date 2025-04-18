@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        /* Seletor universal */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 5em;
+        }
+        /* Seletor de texto */
+        h1 {
+            color: blue;
+        }
+        /* Seletor de class */
+        .blue {
+            color: blue;
+        }
+        /* todos os elemetos p que contem a class blue */
+        p.blue {
+            color: blue;
+        }
+        /* Seletor ID */
+        #cabecalho {
+            background-color: rgb(38, 38, 211);
+            padding: 10px;
+            font-size: 2em;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        /* Seletor filho */
+        .pai {
+            background-color: rgb(85, 85, 233);
+            padding: 10px;
+            text-align: justify;
+            width: 500px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .pai > .filho {
+            background-color: rgb(39, 38, 38);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Seletor descendente */ 
+        div li {
+            border-bottom: 1px solid;
+            padding: 10px;
+        }
+        div ol {
+            padding: 0 30px;
+            width: 500px;
+            margin: 10px;
+            color: green;
+            border: 1px solid;
+        }
+
+        /* Seletor de irmão adjacente */
+        h3 + p {
+            color: red;
+        }
+        /* Seletor de irmão geral */
+
+        h4 ~ p {
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecalho">
+        Cabeçalho
+    </div>
+    <div class="container">
+        <h1>Titulo da página</h1>
+        <p class="blue">paragrafo 1</p>
+
+        <span>Span</span>
+        <p>Outro paragrafo</p>
+        <div class="filho"></div>
+        <div class="pai">
+            <div class="filho">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias, optio vero eius nesciunt asperiores libero vitae deleniti et! Accusantium commodi laudantium voluptatibus dolore repellat. Ad quia quaerat nemo facere!</p>
+            </div>
+        </div>
+        <div class="pai">
+            <div class="filho">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias, optio vero eius nesciunt asperiores libero vitae deleniti et! Accusantium commodi laudantium voluptatibus dolore repellat. Ad quia quaerat nemo facere!</p>
+            </div>
+        </div>
+        <h1>descendente</h1>
+        <div>
+            <ol type="1">
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            </ol>
+        </div>
+        <h3>adjacente</h3>
+        <p>irmao 1</p>
+        <p>irmao 2</p>
+
+        <h4>Irmão geral</h4>
+        <p>Irmão 3</p>
+        <p>Irmão 4</p>
+        <p>Irmão 5</p>
+        <p>Irmão 6</p>
+    </div>
+</body>
+</html>
