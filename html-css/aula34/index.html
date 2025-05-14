@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança e Especividade</title>
+    <style>
+        /*-----Herança-----*/
+        /* body {
+            color: red;
+        } */
+
+        /*-----Especividade-----*/
+        /* .pagina p {
+            color: blue !important;
+        }
+
+        #pagina p {
+            color: red;
+        } */
+
+        /* Se um seletor for mais especifico que outro a regra espesifica será aplicada (terá precedencia sobre regras mais gerais) */
+        * {
+            color: red;
+        }
+        h1 { /*3*/
+            color: blue;
+        }
+        h1.verde { /*2*/
+            color: green;
+        }
+        h1#amarelo { /*1*/
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagina" id="pagina">
+        <h1 class="verde" id="amarelo">Lorem ipsum dolor sit amet consectetur</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, fugit placeat maxime laboriosam possimus deserunt explicabo recusandae ad ipsam fugiat voluptatum porro fuga eligendi, adipisci quia commodi, debitis nulla officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, fugit placeat maxime laboriosam possimus deserunt explicabo recusandae ad ipsam fugiat voluptatum porro fuga eligendi, adipisci quia commodi, debitis nulla officia.</p>
+    </div>
+</body>
+</html>
